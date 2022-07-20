@@ -1,0 +1,17 @@
+@media only screen and (max-width: 450px) {
+  .header_area .main-menu .navbar,
+  .banner,
+  .about-area,
+  .brand-area,
+  .skills-area,
+  .project-area,
+  .contact-me footer {
+    padding: 2%;
+    margin: 2%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

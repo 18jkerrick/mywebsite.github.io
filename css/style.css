@@ -1,0 +1,256 @@
+@import url(./fonts.css);
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100&display=swap");
+/* @import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid"; */
+
+body {
+  background-color: #2a2b3b;
+  font-family: "Press Start 2P", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+.nav-item .nav-link {
+  color: #79dce8;
+}
+
+.nav-item .nav-link.active {
+  color: #ff6288;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.nav-item .nav-link:hover {
+  color: #ff6288;
+  font-weight: 700;
+  font-size: large;
+}
+
+.text-title {
+  color: #ffc007;
+}
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: ;
+  z-index: 999;
+}
+/* HEADER */
+
+/* BANNER */
+h3.text-title {
+  font-size: 2rem;
+}
+h1.text-title {
+  font-size: 3.5rem;
+}
+
+h4.text-title {
+  font-size: 1rem;
+}
+
+.carousel-item h4 {
+  color: #ffc007;
+}
+/* BANNER */
+
+/* ABOUT */
+.about-img i {
+  padding: 0px 100px;
+  color: rgb(161, 156, 156);
+  font-size: 10rem;
+}
+
+.text-upper span {
+  color: #fc9966;
+}
+
+.about-info {
+  color: #fc9966;
+  font-size: 13px;
+}
+.about-img {
+  padding: 0px 140px;
+}
+/* ABOUT */
+
+/* EXPERIENCE */
+.work-experience {
+  padding-right: 100px;
+}
+/* Bottom and Middle Rows*/
+.brand-area .col-lg-6.col-md-12.col-sm-12 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+
+.single-brand {
+  max-height: 100%;
+  max-width: 100%;
+  background-color: #ff6288;
+  color: #2a2b3b;
+  border-radius: 10px;
+}
+
+.single-brand h5 {
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+
+.single-brand i {
+  color: #2a2b3b;
+  font-size: 70px;
+}
+
+.single-brand:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+/* Top Row */
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.big-single-brand:hover {
+  transform: scale(1.1);
+}
+
+.timeline {
+  padding-left: 100px;
+}
+
+.timeline img {
+  width: 750px;
+  height: auto;
+}
+
+.timeline h2 {
+  padding-left: 50px;
+  padding-bottom: 25px;
+  color: #ff6288;
+}
+/* EXPERIENCE */
+
+/* SKILLS */
+#skills {
+  padding: 50px 0px;
+}
+.skill-title h1 {
+  color: #a8dc76;
+}
+
+.service-img img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card-body h5 {
+  color: #a8dc76;
+}
+
+.card-body p {
+  color: #a8dc76;
+  font-size: 10px;
+}
+
+.services-list .row {
+  padding: 0px 80px;
+}
+
+.service {
+  padding: 0px 30px;
+}
+
+/* SKILLS */
+
+/* PROJECTS */
+#projects {
+  padding: 0px 30px;
+}
+.project .img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project-area {
+  color: #79dce8;
+}
+
+.button-group {
+  gap: 0px;
+}
+
+.button-group button {
+  background: transparent;
+  border: none;
+  color: #79dce8;
+}
+
+.button-group button.active {
+  color: #ff6288;
+}
+
+.button-group button:hover {
+  color: #ff6288;
+  font-weight: 700;
+  font-size: large;
+}
+
+.project .img a:hover img {
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+  transform: scale(1.1);
+}
+/* PROJECTS */
+
+/* CONTACT */
+
+.contact-me {
+  color: #ac9df2;
+}
+
+.contact h3 {
+  text-align: center;
+}
+
+.follow h3 {
+  text-align: center;
+}
+
+.social a {
+  color: rgb(167, 166, 166);
+  font-size: 70px;
+}
+
+.social a:hover {
+  color: white;
+}
+
+/* CONTACT */
+
+/* FOOTER */
+footer p {
+  color: white;
+  font-size: 11px;
+}
+/* FOOTER */
