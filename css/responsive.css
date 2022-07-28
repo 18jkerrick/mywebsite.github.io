@@ -1,5 +1,4 @@
 @media only screen and (max-width: 450px) {
-  .header_area .main-menu .navbar,
   .banner,
   .about-area,
   .brand-area,
@@ -13,5 +12,57 @@
   img {
     height: 100%;
     width: 100%;
+  }
+  .about-img {
+    display: none;
+  }
+
+  #history .timeline {
+    display: none;
+  }
+
+  .header_area .navmenu {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .banner,
+  .about-area,
+  .brand-area,
+  .skills-area,
+  .project-area,
+  .contact-me footer {
+    padding: 2%;
+    margin: 2%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  #home .intro {
+    padding-bottom: 0px;
+  }
+
+  #history .timeline.col-xl-7.col-lg-12.col-lg-12 {
+    padding: 0px;
+  }
+
+  .history .timeline.col-xl-7.col-lg-12.col-lg-12 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    margin: auto;
+    display: block;
+  }
+
+  .header_area .navmenu {
+    margin: 0px;
   }
 }
