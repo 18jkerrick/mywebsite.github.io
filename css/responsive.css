@@ -24,6 +24,11 @@
   .header_area .navmenu {
     margin: 0px;
   }
+
+  #carouselExampleSlidesOnly {
+    width: 140px;
+    height: 50px;
+  }
 }
 
 @media only screen and (max-width: 990px) {
