@@ -319,3 +319,73 @@ footer p {
   font-size: 11px;
 }
 /* FOOTER */
+
+/* ===========================================
+   SKILL TAGS (Base Styles)
+   =========================================== */
+
+.skill-tag {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: var(--space-1) var(--space-3);
+  border-radius: 20px;
+  border: 2px solid transparent;
+  display: inline-block;
+  transition: 
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Language Tags (Cyan) */
+.skill-tag.language {
+  background: rgba(121, 220, 232, 0.15);
+  color: var(--tag-languages);
+  border-color: rgba(121, 220, 232, 0.3);
+}
+
+.skill-tag.language:hover {
+  border-color: var(--tag-languages);
+  box-shadow: 0 0 12px rgba(121, 220, 232, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Framework Tags (Pink) */
+.skill-tag.framework {
+  background: rgba(255, 98, 136, 0.15);
+  color: var(--tag-frameworks);
+  border-color: rgba(255, 98, 136, 0.3);
+}
+
+.skill-tag.framework:hover {
+  border-color: var(--tag-frameworks);
+  box-shadow: 0 0 12px rgba(255, 98, 136, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Infrastructure Tags (Green) */
+.skill-tag.infra {
+  background: rgba(168, 220, 118, 0.15);
+  color: var(--tag-infrastructure);
+  border-color: rgba(168, 220, 118, 0.3);
+}
+
+.skill-tag.infra:hover {
+  border-color: var(--tag-infrastructure);
+  box-shadow: 0 0 12px rgba(168, 220, 118, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Tool Tags (Orange) */
+.skill-tag.tool {
+  background: rgba(252, 153, 102, 0.15);
+  color: var(--tag-tools);
+  border-color: rgba(252, 153, 102, 0.3);
+}
+
+.skill-tag.tool:hover {
+  border-color: var(--tag-tools);
+  box-shadow: 0 0 12px rgba(252, 153, 102, 0.3);
+  transform: translateY(-2px);
+}

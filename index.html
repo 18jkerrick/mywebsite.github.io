@@ -143,66 +143,166 @@
     </section>
     <!-- ========================== ABOUT AREA ========================== -->
 
-     <!-- ========================== EXPERIENCE AREA ========================== -->
-    <section class="brand-area" id="history">
-        <div class="container-fluid my-5 ms-4">
-            <div class="row">
-                <div class="timeline col-xl-7 col-lg-12 col-lg-12">
-                    <h2>Here's my previous work experience</h2>
-                    <img src="/img/timeline.png" alt="timeline of my work experience">
-                </div>
-                <div class="work-experience col-xl-5 col-lg-12 col-lg-12">
-                    <div class="row m-0">
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                          <a href="/pages/work/calpoly.html" style="text-decoration: none;">
-                            <div class="single-brand">
-                              <div class="icon-wrapper"><i class="bi bi-book"></i></div>
-                              <h5 class="text-center">Cal Poly Education</h5>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                          <a href="/pages/work/webdev.html">
-                          <div class="single-brand">
-                            <div class="icon-wrapper"><i class="bi bi-code-square"></i></div>
-                              <h5 class="text-center">Freelance Web Development</h5>
-                          </div>
-                          </a>
-                      </div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                          <a href="/pages/work/its.html">
-                            <div class="single-brand">
-                              <div class="icon-wrapper"><i class="bi bi-ethernet"></i></div>
-                                <h5 class="text-center">Cal Poly IT Services</h5>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                          <a href="/pages/work/teaching.html">
-                            <div class="single-brand">
-                              <div class="icon-wrapper"><i class="bi bi-cpu"></i></div>
-                                <h5 class="text-center">Teaching Assistant</h5>
-                            </div>
-                          </a>
-                        </div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                          <a href="/pages/work/ey.html">
-                            <div class="single-brand">
-                              <div class="icon-wrapper"><i class="bi bi-briefcase"></i></div>
-                                <h5 class="text-center">EY Internship</h5>
-                            </div>
-                          </a>
-                          </div>
-                    </div>
-                </div>
+    <!-- ========================== EXPERIENCE AREA ========================== -->
+    <section class="experience-section" id="history">
+      <h2 class="experience-title">EXPERIENCE</h2>
+      
+      <div class="experience-timeline">
+        
+        <!-- VISA (Nested - Promotion) -->
+        <article class="timeline-entry animate-in">
+          <header class="timeline-header">
+            <div class="company-info">
+              <h3 class="company-name">VISA</h3>
+              <span class="company-location">Foster City, CA</span>
             </div>
-        </div>
+            <span class="date-range">Jan 2023 – Present</span>
+          </header>
+          
+          <!-- Senior Role (Current) -->
+          <div class="role-entry">
+            <span class="promoted-badge">↑ PROMOTED</span>
+            <h4 class="role-title">Senior Software Test Engineer</h4>
+            <span class="role-dates">January 2025 – Present</span>
+            <ul class="role-description">
+              <li>Engineer on Visa's next-generation global authorization platform handling hundreds of billions of transactions per year</li>
+              <li>Designed low-latency, high-throughput microservices using Go, Kafka, Cassandra with strong emphasis on fault tolerance</li>
+              <li>Owned critical authorization workflows for Nigeria's payment ecosystem, scaling toward 6–22B transactions annually</li>
+              <li>Debugged production issues across network, service, and data layers with incident turnaround under 36 hours</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="skill-tag language">Go</span>
+              <span class="skill-tag infra">Kafka</span>
+              <span class="skill-tag infra">Cassandra</span>
+              <span class="skill-tag language">MySQL</span>
+              <span class="skill-tag infra">Docker</span>
+              <span class="skill-tag infra">Kubernetes</span>
+            </div>
+          </div>
+          
+          <!-- Previous Role -->
+          <div class="role-entry">
+            <h4 class="role-title">Software Test Engineer</h4>
+            <span class="role-dates">January 2023 – January 2025</span>
+            <ul class="role-description">
+              <li>Built Selenium-based automation framework with Jenkins CI/CD, increasing test coverage 6x</li>
+              <li>Reduced release sign-off time from 1 month to 1 week</li>
+              <li>Developed and validated high-volume data pipelines processing up to 100GB/day</li>
+              <li>Led integration testing for real-time and batch systems ensuring backward compatibility</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="skill-tag language">Python</span>
+              <span class="skill-tag tool">Selenium</span>
+              <span class="skill-tag tool">Jenkins</span>
+              <span class="skill-tag infra">Kafka</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Freelance Web Development -->
+        <article class="timeline-entry animate-in">
+          <header class="timeline-header">
+            <div class="company-info">
+              <h3 class="company-name">FREELANCE</h3>
+              <span class="company-location">San Luis Obispo, CA</span>
+            </div>
+            <span class="date-range">May 2022 – Dec 2023</span>
+          </header>
+          
+          <div class="role-entry">
+            <h4 class="role-title">Full-Stack Developer</h4>
+            <span class="role-dates">Web Developer for Bob and Beth Whitworth</span>
+            <ul class="role-description">
+              <li>Managed frontend and backend operations for 3 WordPress websites promoting "Through My Eyes" book</li>
+              <li>Migrated websites from outdated server using FTP and data backups</li>
+              <li>Updated PHP and plugins, troubleshot compatibility errors with legacy software</li>
+              <li>Designed new frontend layouts for 8+ year old websites</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="skill-tag framework">WordPress</span>
+              <span class="skill-tag language">PHP</span>
+              <span class="skill-tag language">MySQL</span>
+              <span class="skill-tag tool">FTP</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Cal Poly IT -->
+        <article class="timeline-entry animate-in">
+          <header class="timeline-header">
+            <div class="company-info">
+              <h3 class="company-name">CAL POLY IT</h3>
+              <span class="company-location">San Luis Obispo, CA</span>
+            </div>
+            <span class="date-range">2021 – 2022</span>
+          </header>
+          
+          <div class="role-entry">
+            <h4 class="role-title">IT Support Technician</h4>
+            <ul class="role-description">
+              <li>Provided technical support for campus network and systems</li>
+              <li>Troubleshot hardware and software issues for students and faculty</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="skill-tag tool">Networking</span>
+              <span class="skill-tag tool">Troubleshooting</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- EY Internship -->
+        <article class="timeline-entry animate-in">
+          <header class="timeline-header">
+            <div class="company-info">
+              <h3 class="company-name">EY</h3>
+              <span class="company-location">Los Angeles, CA</span>
+            </div>
+            <span class="date-range">Summer 2021</span>
+          </header>
+          
+          <div class="role-entry">
+            <h4 class="role-title">Technology Consulting Intern</h4>
+            <ul class="role-description">
+              <li>Participated in client engagements for technology transformation projects</li>
+              <li>Collaborated with cross-functional teams on deliverables</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="skill-tag tool">Consulting</span>
+              <span class="skill-tag tool">Agile</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Cal Poly Education -->
+        <article class="timeline-entry animate-in">
+          <header class="timeline-header">
+            <div class="company-info">
+              <h3 class="company-name">CAL POLY SLO</h3>
+              <span class="company-location">San Luis Obispo, CA</span>
+            </div>
+            <span class="date-range">2018 – 2022</span>
+          </header>
+          
+          <div class="role-entry">
+            <h4 class="role-title">B.S. Computer Science</h4>
+            <span class="role-dates">Concentration: Software Engineering</span>
+            <ul class="role-description">
+              <li>AWS Certified Solutions Architect – Associate</li>
+              <li>Relevant coursework: Data Structures, Algorithms, Databases, Software Engineering</li>
+              <li>Active member: Delta Chi Fraternity, National Society of Black Engineers</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="skill-tag infra">AWS</span>
+              <span class="skill-tag language">Java</span>
+              <span class="skill-tag language">Python</span>
+              <span class="skill-tag language">C++</span>
+            </div>
+          </div>
+        </article>
+        
+      </div>
     </section>
-     <!-- ========================== EXPERIENCE AREA ========================== -->
+    <!-- ========================== EXPERIENCE AREA ========================== -->
 
       <!-- ========================== SKILLS AREA ========================== -->
     <section class="skills-area" id="skills">
