@@ -1,18 +1,66 @@
 @import url(./fonts.css);
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100&display=swap");
-/* @import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/grid"; */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+/* ===========================================
+   CSS CUSTOM PROPERTIES (Design System)
+   =========================================== */
+:root {
+  /* Font Families */
+  --font-display: 'Press Start 2P', cursive;
+  --font-body: 'IBM Plex Mono', monospace;
+  
+  /* Core Palette */
+  --bg-primary: #2a2b3b;
+  --bg-secondary: #1e1f2e;
+  --bg-elevated: #353648;
+  
+  /* Accent Colors */
+  --accent-pink: #ff6288;
+  --accent-cyan: #79dce8;
+  --accent-yellow: #ffc007;
+  --accent-orange: #fc9966;
+  --accent-green: #a8dc76;
+  --accent-purple: #ac9df2;
+  
+  /* Skill Tag Colors */
+  --tag-languages: #79dce8;
+  --tag-frameworks: #ff6288;
+  --tag-infrastructure: #a8dc76;
+  --tag-tools: #fc9966;
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  
+  /* Effects */
+  --glow-pink: 0 0 20px rgba(255, 98, 136, 0.4);
+  --glow-cyan: 0 0 20px rgba(121, 220, 232, 0.4);
+  --shadow-lift: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.3);
+  
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+}
 
 body {
-  background-color: #2a2b3b;
-  font-family: "Press Start 2P", cursive;
+  background-color: var(--bg-primary);
+  font-family: var(--font-display);
+}
+
+/* Body text uses IBM Plex Mono for readability */
+p, li, span:not(.text-title):not(.text-upper), .body-text {
+  font-family: var(--font-body);
 }
 
 a {
@@ -85,8 +133,21 @@ h4.text-title {
 }
 
 .about-info {
-  color: #fc9966;
-  font-size: 13px;
+  font-family: var(--font-body);
+  color: var(--accent-orange);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+/* Hero Subtext */
+.hero-subtext {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: var(--space-4);
+  max-width: 500px;
 }
 .about-img {
   padding: 0px 140px;
