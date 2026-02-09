@@ -82,3 +82,53 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// ===========================================
+// VIDEO MODAL
+// ===========================================
+const modal = document.getElementById('video-modal');
+const youtubeEmbed = document.getElementById('youtube-embed');
+const youtubeUrl = 'https://www.youtube.com/embed/TFbu-JiR4-o';
+
+function openModal() {
+  if (!modal || !youtubeEmbed) return;
+  youtubeEmbed.src = youtubeUrl + '?autoplay=1';
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  if (!modal || !youtubeEmbed) return;
+  youtubeEmbed.src = '';
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Open modal on play button click
+document.querySelectorAll('.play-button').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    openModal();
+  });
+});
+
+// Close modal on close button click
+const closeBtn = document.querySelector('.modal-close');
+if (closeBtn) {
+  closeBtn.addEventListener('click', closeModal);
+}
+
+// Close on overlay click (outside modal container)
+if (modal) {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+}
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+    closeModal();
+  }
+});
