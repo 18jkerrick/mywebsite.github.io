@@ -144,7 +144,7 @@ h4.text-title {
 .hero-subtext {
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: var(--accent-yellow);
   line-height: 1.6;
   margin-top: var(--space-4);
   max-width: 500px;
