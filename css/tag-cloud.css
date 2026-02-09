@@ -1,0 +1,72 @@
+/* ===========================================
+   SKILLS TAG CLOUD
+   =========================================== */
+
+.skills-section {
+  padding: var(--space-16) var(--space-6);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills-title {
+  font-family: var(--font-display);
+  font-size: 1.953rem;
+  color: var(--accent-green);
+  text-align: center;
+  margin-bottom: var(--space-12);
+  letter-spacing: 3px;
+}
+
+/* Category Group */
+.skill-category {
+  margin-bottom: var(--space-8);
+}
+
+.category-label {
+  font-family: var(--font-display);
+  font-size: 0.64rem;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.category-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--text-muted) 0%,
+    transparent 100%
+  );
+}
+
+/* Tags Container */
+.skill-tags-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* Responsive: Mobile */
+@media (max-width: 639px) {
+  .skills-section {
+    padding: var(--space-10) var(--space-4);
+  }
+
+  .skills-title {
+    font-size: 1.25rem;
+  }
+
+  .category-label {
+    font-size: 0.55rem;
+  }
+
+  .skill-tags-group .skill-tag {
+    font-size: 0.65rem;
+    padding: var(--space-1) var(--space-3);
+  }
+}
