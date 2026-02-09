@@ -368,91 +368,123 @@
     </section>
        <!-- ========================== SKIILS AREA ========================== -->
 
-       <!-- ========================== PROJECTS AREA ========================== -->
-       <section class="project-area" id="projects">
-         <div class="container">
-           <div class="project-title pb-3">
-             <h1>Check out my projects!</h1>
-           </div>
-
-           <div class="button-group py-4">
-             <button type="button" class="active" id="btn1" data-filter="*">All</button>
-             <button type="button" data-filter=".popular">Popular</button>
-             <button type="button" data-filter=".recent">Recent</button>
-             <button type="button" data-filter=".oldest">Oldest</button>
-           </div>
-
-           <div class="row grid">
-             <div class="col-lg-4 col-md-6 col-sm-12 element-item recent popular">
-               <div class="project">
-                 <div class="img">
-                   <a href="https://play.unity.com/mg/other/webgl-uz5" target="_blank">
-                    <img src="img/int-hang.jpg" alt="interstellar hangover game tumbnail">
-                   </a>
-                   <div class="title py-4">
-                     <h4>Interstellar hangover</h4>
-                     <span>Recent, Popular</span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
-              <div class="project">
-                <div class="img">
-                  <a href="https://18jkerrick.github.io/GuessMyNumber/" target="_blank">
-                    <img src="img/guessmynum.jpg" alt="guess my number game thumbnail">
-                  </a>
-                  <div class="title py-4">
-                    <h4>Guess my number</h4>
-                    <span>Popular</span>
-                  </div>
-                </div>
+    <!-- ========================== PROJECTS AREA ========================== -->
+    <section class="projects-section" id="projects">
+      <h2 class="projects-title">PROJECTS</h2>
+      
+      <div class="projects-bento">
+        
+        <!-- REMY - Featured (2x2) -->
+        <article class="bento-card bento-card--featured animate-in" data-project="remy">
+          <span class="featured-badge">FEATURED</span>
+          <div class="video-preview">
+            <img 
+              src="img/int-hang.jpg" 
+              alt="Remy Web App" 
+              class="card-thumbnail"
+              loading="lazy"
+            >
+            <video 
+              src="video/short_remy_demo.mp4" 
+              muted 
+              loop 
+              playsinline
+              preload="none"
+            ></video>
+            <button class="play-button" aria-label="Watch Remy demo"></button>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">REMY WEB APP</h3>
+            <p class="project-description">
+              AI-powered app that extracts recipes from Instagram, TikTok, YouTube, and websites, transforming them into structured grocery lists with Instacart integration.
+            </p>
+            <div class="project-tech">
+              <span class="skill-tag framework">Next.js</span>
+              <span class="skill-tag framework">React</span>
+              <span class="skill-tag language">TypeScript</span>
+              <span class="skill-tag infra">Supabase</span>
+              <span class="skill-tag tool">OpenAI</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Interstellar Hangover (1x1) -->
+        <article class="bento-card bento-card--small animate-in">
+          <a href="https://play.unity.com/mg/other/webgl-uz5" target="_blank" rel="noopener">
+            <img 
+              src="img/int-hang.jpg" 
+              alt="Interstellar Hangover Game" 
+              class="card-thumbnail"
+              loading="lazy"
+            >
+            <div class="card-content">
+              <h3 class="project-title">INTERSTELLAR HANGOVER</h3>
+              <p class="project-description">3D arcade shooter with A* pathfinding AI</p>
+              <div class="project-tech">
+                <span class="skill-tag framework">Unity</span>
+                <span class="skill-tag language">C#</span>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
-              <div class="project">
-                <div class="img">
-                  <a href="https://18jkerrick.github.io/PigGame/" target="_blank">
-                    <img src="img/pig.jpg" alt="pig game thumbnail">
-                  </a>
-                  <div class="title py-4">
-                    <h4>Pig Game</h4>
-                    <span>Popular</span>
-                  </div>
-                </div>
+          </a>
+        </article>
+        
+        <!-- Blockchain Voting (1x1) -->
+        <article class="bento-card bento-card--small animate-in">
+          <img 
+            src="img/calc.jpg" 
+            alt="Blockchain Voting Ballot" 
+            class="card-thumbnail"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3 class="project-title">BLOCKCHAIN VOTING</h3>
+            <p class="project-description">Ethereum smart contract for proposals and voting</p>
+            <div class="project-tech">
+              <span class="skill-tag language">Solidity</span>
+              <span class="skill-tag tool">MetaMask</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Guess My Number (1x1) -->
+        <article class="bento-card bento-card--small animate-in">
+          <a href="https://18jkerrick.github.io/GuessMyNumber/" target="_blank" rel="noopener">
+            <img 
+              src="img/guessmynum.jpg" 
+              alt="Guess My Number Game" 
+              class="card-thumbnail"
+              loading="lazy"
+            >
+            <div class="card-content">
+              <h3 class="project-title">GUESS MY NUMBER</h3>
+              <div class="project-tech">
+                <span class="skill-tag language">JavaScript</span>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item oldest">
-              <div class="project">
-                <div class="img">
-                  <a href="https://18jkerrick.github.io/calculator-/" target="_blank">
-                    <img src="img/calc.jpg" alt="calculator thumbnail">
-                  </a>
-                  <div class="title py-4">
-                    <h4>Calculator</h4>
-                    <span>Oldest</span>
-                  </div>
-                </div>
+          </a>
+        </article>
+        
+        <!-- Pig Game (1x1) -->
+        <article class="bento-card bento-card--small animate-in">
+          <a href="https://18jkerrick.github.io/PigGame/" target="_blank" rel="noopener">
+            <img 
+              src="img/pig.jpg" 
+              alt="Pig Game" 
+              class="card-thumbnail"
+              loading="lazy"
+            >
+            <div class="card-content">
+              <h3 class="project-title">PIG GAME</h3>
+              <div class="project-tech">
+                <span class="skill-tag language">JavaScript</span>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item oldest">
-              <div class="project">
-                <div class="img">
-                  <a href="https://18jkerrick.github.io/etch-a-sketch/" target="_blank">
-                    <img src="img/etch.jpg" alt="calculator thumbnail">
-                  </a>
-                  <div class="title py-4">
-                    <h4>Etch-a-sketch</h4>
-                    <span>Oldest</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-           </div>
-         </div> 
-       </section>
-        <!-- ========================== PROJECTS AREA ========================== -->
+          </a>
+        </article>
+        
+      </div>
+    </section>
+    <!-- ========================== PROJECTS AREA ========================== -->
 
         <!-- ========================== CONTACT AREA ========================== -->
         <section class="contact-me py-5" id="contact">
